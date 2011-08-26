@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import patterns, include, url
-from distest.main.views import show_mydata, show_META, processors
+from distest.main.views import show_mydata, show_META, processors, change_data
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -18,4 +18,5 @@ urlpatterns = patterns('',
     url(r'^$', show_mydata),
     url(r'^meta/$', show_META),
     url(r'^processors/$', processors),
+    url(r'^edit/$',change_data),
 )
