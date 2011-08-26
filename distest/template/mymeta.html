@@ -1,0 +1,8 @@
+{%extends 'base.html'%}
+{%block content%}
+<table>
+{%for meta in metas%}
+<tr><td>Date: </td><td>{{meta.date}}</td><td>IP: </td><td>{{meta.ip}}</td><td>username: </td><td>{{meta.username}}</td></tr>
+{%endfor%}
+</table>
+{%endblock%}

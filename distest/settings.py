@@ -93,6 +93,7 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'distest.main.middleware.METAmiddleware',
     #'django.middleware.common.CommonMiddleware',
     #'django.contrib.sessions.middleware.SessionMiddleware',
     #'django.middleware.csrf.CsrfViewMiddleware',
