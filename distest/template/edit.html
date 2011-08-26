@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{%block content%}
+    {%if form.errors%}
+        <p style="color: red">Error{{form.errors|pluralize}}</p>
+    {%endif%}
+    <form action="" method="post">
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit" value="Save">
+    </form>
+
+{%endblock%}
