@@ -85,6 +85,10 @@ STATICFILES_FINDERS = (
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '%c!tfn&gn*61-rc4ums-xr2hx52cj2ub%-sn#&2l&3i99k4!n*'
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'distest.main.context_processors.custom',
+)
+
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
